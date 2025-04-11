@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="None">
+        
+        
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <title>Simple Data Structure Package</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/fontawesome.min.css" rel="stylesheet">
+        <link href="css/brands.min.css" rel="stylesheet">
+        <link href="css/solid.min.css" rel="stylesheet">
+        <link href="css/v4-font-face.min.css" rel="stylesheet">
+        <link href="css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body class="homepage">
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href=".">Simple Data Structure Package</a>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#data-structures-package" class="nav-link">Data Structures Package</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#classes-included" class="nav-link">Classes Included</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="data-structures-package">Data Structures Package</h1>
+<p>This package implements fundamental data structures in Python, including Array, LinkedList, Stack, Queue, Graph, and Tree.</p>
+<hr />
+<h2 id="classes-included">Classes Included</h2>
+<h3 id="1-array">1. <code>Array</code></h3>
+<p>A dynamic array implementation similar to Python’s built-in list.</p>
+<h4 id="features">Features:</h4>
+<ul>
+<li><code>append(value)</code> – Adds an element at the end.</li>
+<li><code>insert(index, value)</code> – Inserts an element at a specific index.</li>
+<li><code>delete(index)</code> – Removes an element at a specific index.</li>
+<li><code>search(value)</code> – Returns the index of the value, or -1 if not found.</li>
+<li><code>display()</code> – Displays the current elements.</li>
+<li>Automatically resizes when capacity is exceeded.</li>
+</ul>
+<hr />
+<h3 id="2-linkedlist">2. <code>LinkedList</code></h3>
+<p>A singly linked list with support for insertions, deletions, search, and update.</p>
+<h4 id="features_1">Features:</h4>
+<ul>
+<li><code>add_Node(data, post=0)</code> – Adds a new node at the beginning or specified position.</li>
+<li><code>delete_Node(data, post=0)</code> – Deletes a node at the beginning or a given position.</li>
+<li><code>search(data)</code> – Searches for a node and returns its position.</li>
+<li><code>get_node(position)</code> – Returns the node at a given position.</li>
+<li><code>update(val, new_val)</code> – Updates a node's value.</li>
+<li><code>display()</code> – Prints the entire list.</li>
+</ul>
+<hr />
+<h3 id="3-stack">3. <code>Stack</code></h3>
+<p>A simple stack using a Python list (LIFO).</p>
+<h4 id="features_2">Features:</h4>
+<ul>
+<li><code>push(data)</code> – Adds data to the top of the stack.</li>
+<li><code>pop()</code> – Removes and returns the top item.</li>
+<li><code>top()</code> – Returns the current top without removing it.</li>
+<li><code>display()</code> – Prints stack content.</li>
+<li><code>size()</code> – Returns the number of elements.</li>
+</ul>
+<hr />
+<h3 id="4-queue">4. <code>Queue</code></h3>
+<p>A FIFO queue using a Python list.</p>
+<h4 id="features_3">Features:</h4>
+<ul>
+<li><code>enqueue(data)</code> – Adds data to the end.</li>
+<li><code>dequeue()</code> – Removes and returns the front item.</li>
+<li><code>is_empty()</code> – Checks if the queue is empty.</li>
+<li><code>size()</code> – Returns the queue length.</li>
+<li><code>display()</code> – Displays the queue elements.</li>
+</ul>
+<hr />
+<h3 id="5-graph">5. <code>Graph</code></h3>
+<p>An undirected graph implemented using an adjacency list.</p>
+<h4 id="features_4">Features:</h4>
+<ul>
+<li><code>add_node(data)</code> – Adds a new node.</li>
+<li><code>add_edge(data1, data2)</code> – Creates a two-way connection between nodes.</li>
+<li><code>display()</code> – Shows all nodes and their neighbors.</li>
+</ul>
+<hr />
+<h3 id="6-tree">6. <code>Tree</code></h3>
+<p>A binary search tree (BST) implementation.</p>
+<h4 id="features_5">Features:</h4>
+<ul>
+<li><code>insert(data)</code> – Inserts a value into the tree.</li>
+<li><code>search(data)</code> – Searches for a value.</li>
+<li><code>in_order()</code> – Prints the tree in in-order traversal.</li>
+</ul>
+<hr /></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = ".",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="js/base.js"></script>
+        <script src="search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
+
+<!--
+MkDocs version : 1.6.1
+Build Date UTC : 2025-04-11 19:49:50.400749+00:00
+-->
