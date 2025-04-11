@@ -1,0 +1,5 @@
+.DS_Store
+dist/
+site/
+tiana_data_structures.egg-info/
+venv/
